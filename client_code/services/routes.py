@@ -1,4 +1,5 @@
 from routing import router
+import json
 
 embed = {
     "version": "next",
@@ -21,4 +22,4 @@ class HelloRoute(router.Route):
     form = "app.HelloWorld"
 
     def meta(self, **loader_args):
-        return {"title": "Hello World", "description": "A farcaster mini app MWE", "fc:frame": embed}
+        return {"title": "Hello World", "description": "A farcaster mini app MWE", "fc:frame": json.dumps(embed)}
