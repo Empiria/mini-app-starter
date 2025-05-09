@@ -1,15 +1,16 @@
 import anvil.server
+import anvil.secrets
 from app.services import routes  # noqa unused_import
 
 
 @anvil.server.wellknown_endpoint("/farcaster.json")
 def manifest():
     _manifest = {
-        # "accountAssociation": {
-        #     "header": "Your header",
-        #     "payload": "Your payload",
-        #     "signature": "Your signature",
-        # },
+        "accountAssociation": {
+            "header": anvil.secrets.get_secret("fc-header"),
+            "payload": anvil.secrets.get_secret("fc-payload"),
+            "signature": anvil.secrets.get_secret("fc-signature"),
+        },
         "frame": {
             "version": "1",
             "name": "HelloWorld",

@@ -38,9 +38,22 @@ runtime_options:
   server_spec: {base: python310-minimal}
   server_version: python3-full
   version: 3
+secrets:
+  fc-header:
+    type: secret
+    value: {PULS75XJLCWFIACD: KcgetOW5RzXZ1Ku9nSIm4VTXesIig4GpWE4rPftTpI1SadktRD4UhlMtSvWCucs2aqvucWNgNZ8yuCarZLHAUib75WdADXkGgYa4v+hx6oRs6JNOtRlhWiLNdCHDrV4qzvt9cuNJaMCCvFMKJMVmPXsUP9wNA/9v3vhI6zpgQLbPLxIFb0S7Yn7yDIp6N2lzcWI4iAsql47BqUjPT3tWnNw9hyEJM/HkjXRoZnRmJZzn1ZAnPMq4IigQHblhbK6W8Bbgz4WMTpcbz8CuNQ==}
+  fc-payload:
+    type: secret
+    value: {PULS75XJLCWFIACD: VRIPOYnY7H6N3BGdTcJLsaJWZzGTXDxqOIGPp2/9+/2QHkDKMR6Md3GsXZNBavY04GmNmcyAXdc9kozs8hh5MHmitPi5ZKTh9SoH0EwtKvEILvIEEOUKi5eT1jOxEHDGbGv3HYto/RuWPTYgIQAmSwYBP00BIif+3yN8HkgGbJWFIAZSo5E2a0oZChs+ZF5DUkR0}
+  fc-signature:
+    type: secret
+    value: {PULS75XJLCWFIACD: QiaPuC12+AOs39QGreflnTxyWbd76OGgUzf1BZsk3eCbnCubYazQODx22wh3wlESkDVuYcKaxBQ1sDgTYSef/WqUoaGhO6I6IbwCGnUGctEmAInVTBUFyJSaJvz/gUwJxgwT/UeKOnqXmDxA6RX+siFgTLZaa7ffPTqliczpoPj5t0Yqez5VRRMoZgkT0PKvwhJbk9C3PPM7VQLd83BnoQywaiKxm9lK2fkDq+z3188lTqo4ENtyfnVbyIJ1hNJ+qyg0FNwC7LfskRQqUTJ1l1zKn/8RoQVFGKWSXYh74vN6qGbKJJGDvQ1SpKwg6XXchcNv3cgOfU96i2B0lGgrp4F8tX6F3TKPqvu2kTcyGQ==}
 services:
 - client_config: {}
   server_config: {}
   source: /runtime/services/tables.yml
+- client_config: {}
+  server_config: {}
+  source: /runtime/services/anvil/secrets.yml
 startup: {module: startup, type: module}
 startup_form: null
