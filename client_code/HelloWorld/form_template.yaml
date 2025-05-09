@@ -1,0 +1,13 @@
+components:
+- layout_properties: {grid_position: 'BXOJBW,YQUJNA'}
+  name: heading_1
+  properties: {text: Hello World!}
+  type: form:dep_lin1x4oec0ytd:_Components.Heading
+- layout_properties: {grid_position: 'IXDZFA,UNMYOF'}
+  name: readme
+  properties: {}
+  type: RichText
+container:
+  event_bindings: {}
+  type: ColumnPanel
+is_package: true

@@ -1,0 +1,41 @@
+allow_embedding: true
+dependencies:
+- config: {}
+  dep_id: dep_lin1x4oec0ytd
+  resolution_hints: {app_id: 4UK6WHQ6UX7AKELK, name: Material 3 Theme, package_name: m3}
+  version: {version_tag: v1.2.3}
+- dep_id: dep_kdiw29fnbu4q
+  resolution_hints: {app_id: 3PIDO5P3H4VPEMPL, name: routing, package_name: routing}
+  version: {version_tag: v0.3.3}
+- dep_id: dep_jc3wquc731ac3e
+  resolution_hints: {app_id: C6ZZPAPN4YYF5NVJ, name: Anvil Extras, package_name: anvil_extras}
+  version: {version_tag: v3.1.0}
+name: Farcaster Mini App Starter
+native_deps:
+  head_html: |-
+    <script type="module">
+        import { sdk } from "@farcaster/frame-sdk";
+
+        window.frame_sdk = {
+            actions: {
+                ready: () => {
+                    if (sdk.isInMiniApp()) {
+                        return sdk.actions.ready();
+                    }
+                }
+            },
+        };
+    </script>
+  import_map: '{"imports":{"@farcaster/frame-sdk":"https://esm.sh/*@farcaster/frame-sdk@0.0.38/dist/index.js"},"scopes":{"https://esm.sh/":{"@farcaster/frame-core":"https://esm.sh/*@farcaster/frame-core@0.0.34/esm/index.js","@farcaster/frame-core/esm/types":"https://esm.sh/*@farcaster/frame-core@0.0.34/esm/types","comlink":"https://esm.sh/*comlink@4.4.2/dist/esm/comlink.mjs","eventemitter3":"https://esm.sh/*eventemitter3@5.0.1/index.mjs","ox/Errors":"https://esm.sh/*ox@0.4.4/_esm/core/Errors.js","ox/Provider":"https://esm.sh/*ox@0.4.4/_esm/core/Provider.js","ox/RpcRequest":"https://esm.sh/*ox@0.4.4/_esm/core/RpcRequest.js","ox/RpcResponse":"https://esm.sh/*ox@0.4.4/_esm/core/RpcResponse.js","zod":"https://esm.sh/*zod@3.24.4/lib/index.mjs"}}}'
+package_name: app
+runtime_options:
+  client_version: '3'
+  server_spec: {base: python310-minimal}
+  server_version: python3-full
+  version: 3
+services:
+- client_config: {}
+  server_config: {}
+  source: /runtime/services/tables.yml
+startup: {module: startup, type: module}
+startup_form: null

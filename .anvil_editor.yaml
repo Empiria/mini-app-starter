@@ -1,0 +1,15 @@
+unique_ids:
+  assets:
+    theme.css: 6G44GIEQQRJLILWU6GQSQO5BTDFT5ZI3
+    warpcast.jpeg: '1746789450254972551489352.7588'
+  forms:
+    HelloWorld: '1746542169084720262807542.3208'
+  modules:
+    globals: '1746789725247878180751753.1873'
+    services: '1746789570723848789156728.1897'
+    services.frame: '1746789583931364160111395.42224'
+    services.routes: '1746789577978973538661926.4463'
+    startup: '1746783808931181701951454.80905'
+  scripts: {}
+  server_modules:
+    endpoints: '1746789133257892022922315.4559'
