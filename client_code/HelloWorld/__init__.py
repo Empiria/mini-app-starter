@@ -1,7 +1,7 @@
-from ._anvil_designer import HelloWorldTemplate
-from app.services import frame
 import m3
+from app.services import frame
 
+from ._anvil_designer import HelloWorldTemplate
 
 header_content = """
 I'm a mini-app starter kit written (almost) entirely in Python!

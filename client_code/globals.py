@@ -1,6 +1,6 @@
 from anvil_extras.logging import DEBUG, Logger
-from routing import router
 from app.services import frame
+from routing import router
 
 _LOG_LEVEL = DEBUG
 _logger = Logger(name="MiniApp", level=_LOG_LEVEL)
