@@ -1,13 +1,80 @@
 components:
-- layout_properties: {grid_position: 'BXOJBW,YQUJNA'}
-  name: heading_1
-  properties: {text: Hello World!}
-  type: form:dep_lin1x4oec0ytd:_Components.Heading
-- layout_properties: {grid_position: 'IXDZFA,UNMYOF'}
-  name: readme
+- components:
+  - components:
+    - layout_properties: {slot: card-content-container-slot}
+      name: heading_1
+      properties: {text: Hello World!}
+      type: form:dep_lin1x4oec0ytd:_Components.Heading
+    - layout_properties: {slot: card-content-container-slot}
+      name: header_text
+      properties: {}
+      type: RichText
+    layout_properties: {slot: card-content-slot}
+    name: header_card
+    properties: {}
+    type: form:dep_lin1x4oec0ytd:_Components.Card.CardContentContainer
+  layout_properties: {grid_position: 'STQQTJ,PILMYU'}
+  name: card_1
   properties: {}
-  type: RichText
+  type: form:dep_lin1x4oec0ytd:_Components.Card
+- components:
+  - components:
+    - layout_properties: {slot: card-content-container-slot}
+      name: text_1
+      properties: {bold: false, text: Authors}
+      type: form:dep_lin1x4oec0ytd:_Components.Text
+    layout_properties: {slot: card-content-slot}
+    name: card_content_container_1
+    properties: {}
+    type: form:dep_lin1x4oec0ytd:_Components.Card.CardContentContainer
+  - layout_properties: {slot: card-content-slot}
+    name: authors_flow_panel
+    properties: {}
+    type: FlowPanel
+  layout_properties: {grid_position: 'TDDJXS,OHGGHI'}
+  name: authors_card
+  properties: {}
+  type: form:dep_lin1x4oec0ytd:_Components.Card
+- components:
+  - components:
+    - layout_properties: {slot: card-content-container-slot}
+      name: text_2
+      properties: {text: Source Code}
+      type: form:dep_lin1x4oec0ytd:_Components.Text
+    - layout_properties: {slot: card-content-container-slot}
+      name: source_code_text
+      properties: {}
+      type: RichText
+    layout_properties: {slot: card-content-slot}
+    name: card_content_container_3
+    properties: {}
+    type: form:dep_lin1x4oec0ytd:_Components.Card.CardContentContainer
+  layout_properties: {grid_position: 'GMZYYG,PYXFQH'}
+  name: card_2
+  properties: {}
+  type: form:dep_lin1x4oec0ytd:_Components.Card
+- components:
+  - components:
+    - layout_properties: {slot: card-content-container-slot}
+      name: text_3
+      properties: {text: Anvil}
+      type: form:dep_lin1x4oec0ytd:_Components.Text
+    - layout_properties: {slot: card-content-container-slot}
+      name: anvil_text
+      properties: {}
+      type: RichText
+    layout_properties: {slot: card-content-slot}
+    name: card_content_container_4
+    properties: {}
+    type: form:dep_lin1x4oec0ytd:_Components.Card.CardContentContainer
+  layout_properties: {grid_position: 'HKBHVS,JNNUSR'}
+  name: card_3
+  properties: {}
+  type: form:dep_lin1x4oec0ytd:_Components.Card
 container:
   event_bindings: {}
+  properties:
+    spacing:
+      margin: [0, null, 0, null]
   type: ColumnPanel
 is_package: true

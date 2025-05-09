@@ -6,7 +6,7 @@ dependencies:
   version: {version_tag: v1.2.3}
 - dep_id: dep_kdiw29fnbu4q
   resolution_hints: {app_id: 3PIDO5P3H4VPEMPL, name: routing, package_name: routing}
-  version: {version_tag: v0.3.3}
+  version: {version_tag: v0.3.5}
 - dep_id: dep_jc3wquc731ac3e
   resolution_hints: {app_id: C6ZZPAPN4YYF5NVJ, name: Anvil Extras, package_name: anvil_extras}
   version: {version_tag: v3.1.0}
@@ -21,6 +21,11 @@ native_deps:
                 ready: () => {
                     if (sdk.isInMiniApp()) {
                         return sdk.actions.ready();
+                    }
+                },
+                viewProfile: (fid) => {
+                    if (sdk.isInMiniApp()) {
+                        return sdk.actions.viewProfile({fid})
                     }
                 }
             },
