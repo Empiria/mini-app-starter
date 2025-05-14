@@ -14,11 +14,11 @@ I was created using the [Anvil](https://anvil.works) framework.
 If you have an Anvil account, you can [clone](https://anvil.works/build#clone:PULS75XJLCWFIACD=DE3LKNF7IJER4OJWUZNRTMO6) me on there.
 """
 
-authors = [
-    {"meatballs": 484396},
-    {"theref": 344568},
-    {"uglyfruitcake": 1077524}
-]
+authors = {
+    "meatballs": 484396,
+    "theref": 344568,
+    "uglyfruitcake": 1077524,
+}
 
 class HelloWorld(HelloWorldTemplate):
     def __init__(self, **properties):
