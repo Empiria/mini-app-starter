@@ -15,8 +15,9 @@ If you have an Anvil account, you can [clone](https://anvil.works/build#clone:PU
 """
 
 authors = [
-    {"handle": "meatballs", "fid": 484396},
-    {"handle": "theref", "fid": 344568},
+    {"meatballs": 484396},
+    {"theref": 344568},
+    {"uglyfruitcake": 1077524}
 ]
 
 class HelloWorld(HelloWorldTemplate):
@@ -24,9 +25,9 @@ class HelloWorld(HelloWorldTemplate):
         self.header_text.content = header_content
         self.source_code_text.content = source_code_content
         self.anvil_text.content = anvil_content
-        for author in authors:
-            button = m3.components.Button(text=f"@{author['handle']}", appearance="text")
-            button.tag.fid = author["fid"]
+        for nick, fid in authors.items():
+            button = m3.components.Button(text=f"@{nick}", appearance="text")
+            button.tag.fid = fid
             button.add_event_handler("click", self.click_author_link)
             self.authors_flow_panel.add_component(button)
         self.init_components(**properties)
