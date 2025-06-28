@@ -13,22 +13,6 @@ dependencies:
 name: Farcaster Mini App Starter
 native_deps:
   head_html: |-
-    <meta name="fc:frame" content=
-        '{
-            "version": "next",
-            "imageUrl": "https://mini-app-starter.anvil.app/_/theme/warpcast.jpeg",
-            "button": {
-                "title": "🚩 Start",
-                "action": {
-                    "type": "launch_frame",
-                    "url": "https://mini-app-starter.anvil.app",
-                    "name": "Mini App Starter",
-                    "splashImageUrl": "https://mini-app-starter.anvil.app/_/theme/warpast.jpeg",
-                    "splashBackgroundColor": "#f5f0ec"
-                }
-            }
-        }'
-    >
     <script type="module">
         import { sdk } from "@farcaster/frame-sdk";
 
