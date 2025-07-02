@@ -17,12 +17,12 @@ class _Session:
             return
         self.logger.debug("launching session...")
         self.terminate()
-        # router.launch()
+        router.launch()
         self.launched = True
         self.logger.debug("session launched")
 
     def terminate(self):
-        # router.clear_cache()
+        router.clear_cache()
         self.logger.debug("session terminated")
 
 
