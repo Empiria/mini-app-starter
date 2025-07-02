@@ -25,15 +25,5 @@ class HelloRoute(router.Route):
         return {
             "title": "Hello World",
             "description": "Mini App Python Starter Kit",
-            "fc:frame:version": "next",  # Version, not JSON content
-            "fc:frame:image": embed["imageUrl"],
-            "fc:frame:button:1": embed["button"]["title"],
-            "fc:frame:button:1:action": "launch_frame",
-            "fc:frame:button:1:target": embed["button"]["action"]["url"],
-            "og:image": embed["imageUrl"],  # Fallback
+            "fc:frame": json.dumps(embed),
         }
-        # return {
-        #     "title": "Hello World",
-        #     "description": "Mini App Python Starter Kit",
-        #     "fc:frame": json.dumps(embed),
-        # }
