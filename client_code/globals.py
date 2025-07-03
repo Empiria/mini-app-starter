@@ -1,6 +1,6 @@
 from anvil_extras.logging import DEBUG, Logger
 from app.services import frame
-# from routing import router
+from routing import router
 
 _LOG_LEVEL = DEBUG
 _logger = Logger(name="MiniApp", level=_LOG_LEVEL)
@@ -17,12 +17,12 @@ class _Session:
             return
         self.logger.debug("launching session...")
         self.terminate()
-        # router.launch()
+        router.launch()
         self.launched = True
         self.logger.debug("session launched")
 
     def terminate(self):
-        # router.clear_cache()
+        router.clear_cache()
         self.logger.debug("session terminated")
 
 

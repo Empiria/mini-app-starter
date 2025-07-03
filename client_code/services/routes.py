@@ -18,7 +18,7 @@ embed = {
 
 
 class HelloRoute(router.Route):
-    path = "/"
+    path = "/home"
     form = "app.HelloWorld"
 
     def meta(self, **kwargs):
