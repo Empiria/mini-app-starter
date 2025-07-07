@@ -14,7 +14,7 @@ def manifest():
         "frame": {
             "version": "1",
             "name": "HelloWorld",
-            "homeUrl": "https://mini-app-starter.anvil.app",
+            "homeUrl": "https://mini-app-starter.anvil.app/home",
             "iconUrl": "https://mini-app-starter.anvil.app/_/theme/warpcast.jpeg",
         }
     }
