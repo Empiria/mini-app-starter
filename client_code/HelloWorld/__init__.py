@@ -7,7 +7,7 @@ header_content = """
 I'm a mini-app starter kit written (almost) entirely in Python!
 """
 source_code_content = """
-My source code is available on [radicle](git@github.com:Empiria/mini-app-starter.git) or, if you insist, on [github](https://github.com/empiria/mini-app-starter) too.
+My source code is available on [radicle](https://app.radicle.xyz/nodes/rosa.radicle.xyz/rad:ztTFriaB1yVqcLR1WPcMZDfeKdbE) or, if you insist, on [github](https://github.com/empiria/mini-app-starter) too.
 """
 anvil_content = """
 I was created using the [Anvil](https://anvil.works) framework.
