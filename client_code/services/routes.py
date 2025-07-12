@@ -17,6 +17,11 @@ embed = {
 }
 
 
+class HomeRoute(router.Route):
+    path = "/"
+    form = "app.HelloWorld"
+
+
 class HelloRoute(router.Route):
     path = "/home"
     form = "app.HelloWorld"

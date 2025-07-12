@@ -7,9 +7,10 @@ header_content = """
 I'm a mini-app starter kit written (almost) entirely in Python!
 """
 source_code_content = """
+You'll probably need to use a right mouse click to follow these links...
+
 My source code is available on [radicle](https://app.radicle.xyz/nodes/rosa.radicle.xyz/rad:ztTFriaB1yVqcLR1WPcMZDfeKdbE) or, if you insist, on [github](https://github.com/empiria/mini-app-starter) too.
-"""
-anvil_content = """
+
 I was created using the [Anvil](https://anvil.works) framework.
 If you have an Anvil account, you can [clone](https://anvil.works/build#clone:PULS75XJLCWFIACD=DE3LKNF7IJER4OJWUZNRTMO6) me on there.
 """
@@ -24,7 +25,6 @@ class HelloWorld(HelloWorldTemplate):
     def __init__(self, **properties):
         self.header_text.content = header_content
         self.source_code_text.content = source_code_content
-        self.anvil_text.content = anvil_content
         for nick, fid in authors.items():
             button = m3.components.Button(text=f"@{nick}", appearance="text")
             button.tag.fid = fid
